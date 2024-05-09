@@ -32,4 +32,6 @@ using (var scope = scopeFactory.CreateScope())
     }
 }
 
+app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
+
 app.Run();
